@@ -1,172 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Контакты</title>
-	<link rel="stylesheet" href="lib/css/main.css">
-	<script src="https://kit.fontawesome.com/ccb1b5141a.js" crossorigin="anonymous"></script>
-</head>
-<body>
-	<div class="wrapper">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Контакты</title>
+    <link rel="stylesheet" href="lib/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/ccb1b5141a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#" method="post" enctype="multipart/form-data">
+              <h2 class="formText">Оставьте заявку</h2>
+              <p class="formSecondText">И я свяжусь с вами!</p>
 
-		<div class="content">
+              <div class="formInput">
+                <span><i class="fas fa-user"></i></span>
+                <input
+                  type="text"
+                  name="username"
+                  value=""
+                  placeholder="Введите ваше имя"
+                />
+              </div>
+              <div class="formInput">
+                <span><i class="fas fa-phone-alt"></i></span>
+                <input
+                  type="telefon"
+                  name="userPhone"
+                  value=""
+                  placeholder="Введите ваш телефон"
+                />
+              </div>
+              <div class="formInput">
+                <span><i class="fas fa-envelope"></i></span>
+                <input
+                  type="email"
+                  name="useremail"
+                  value=""
+                  class="form__email"
+                  placeholder="Введите ваш email"
+                />
+              </div>
+              <div class="formComment">
+                <i class="fas fa-comment-dots"></i>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  class="inputText"
+                  autocomplete="off"
+                  oninput="getCount()"
+                  placeholder="Cообщение"
+                ></textarea>
+              </div>
 
-			<div id="myModal" class="modal">
-				<div class="modal-content">
-					<span class="close">&times;</span>
+              <div class="under">
+                <input
+                  type="submit"
+                  id="submitBtn"
+                  value="Отправить"
+                  class="send"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
 
-					<form>
-							
-						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="Portafolio">
-						<input type="hidden" name="admin_email" value="daniel.develop.us@gmail.com">
-						<input type="hidden" name="form_subject" value="Заявка на создание сайта">
-						<!-- END Hidden Required Fields -->
+        <header class="header">
+          <nav class="navigation">
+            <div class="container">
+              <div class="header-nav-row">
+                <div class="header-logo">
+                  <a href="" class="logo"
+                    >Daniel
+                    <span>develop</span>
+                  </a>
+                </div>
 
-						<h2 class="formText">Оставьте заявку</h2>
-						<p class="formSecondText">И я свяжусь с вами!</p>
-					
-						<div class="formInput">
-							<span><i class="fas fa-user"></i></span>
-							<input type="text" name="Name" placeholder="Введите ваше имя">
-						</div>
-						<div class="formInput">
-							<span><i class="fas fa-phone-alt"></i></span>
-							<input type="telefon" name="Phone" value="" placeholder="Введите ваш телефон">
-						</div>
-						<div class="formInput">
-							<span><i class="fas fa-envelope"></i></span>
-							<input type="email" name="E-mail" value="" class="form__email" placeholder="Введите ваш email">
-						</div>	
-						<div class="formComment">
-							<i class="fas fa-comment-dots"></i>
-							<textarea name="comment" id="comment" class="inputText" autocomplete="off" oninput="getCount()" placeholder="Cообщение"></textarea>
-						</div>	
-						
-						<div class="under">
-							<p class="counter"><span id="count"></span>/500 знаков</p>
-							<input type="submit" id="submitBtn" value="Отправить" class="send">
-						</div>
-						
-					</form>
+                <div class="header-menu">
+                  <ul class="header-menu-list">
+                    <li class="header-menu__item">
+                      <a href="index.html">Главная</a>
+                    </li>
+                    <li class="header-menu__item">
+                      <a href="About.html">Обо мне</a>
+                    </li>
+                    <li class="header-menu__item">
+                      <a href="contact.html">Контакты</a>
+                    </li>
+                  </ul>
+                  <div class="header-menu-link">
+                    <button id="myBtnNav" class="header-menu__link">
+                      <i class="fas phone fa-mobile-alt"></i>
+                      обратный звонок
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
 
-				</div>
-			</div>
+          <div class="contact-header-desc">
+            <h1 class="header__title">Web дизайн & Web разработка</h1>
+            <i class="fal fa-horizontal-rule line-header"></i>
+            <div class="div contact-information">
+              <ul class="horizont-list">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  г. Санкт-Петербург, Петергофское шоссе , дом 45
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt"></i>
+                  +7 (908) 140-77-93
+                </li>
+                <li>
+                  <i class="far fa-envelope"></i>
+                  daniel.develop.us@gmail.com
+                </li>
+              </ul>
+            </div>
+            <button id="myBtnHeader" class="header-desc_btn">
+              Отравить заявку
+            </button>
+          </div>
+        </header>
 
-			<header class="header">
-				<nav class="navigation">
-					<div class="container">
-						<div class="header-nav-row">
+        <section class="information">
+          <div class="container">
+            <div class="information-row">
+              <h2 class="title"><span>Контактная</span> информация</h2>
+              <i class="fal fa-horizontal-rule prices__line"></i>
+              <p class="text">
+                Работаю с Пн-Пт с 10:00 до 20:00 <br />
+                В нерабочее время обращайтесь на почту
+                <span class="text-blue">daniel.develop.us@gmail.com</span> и я
+                обязательно вам отвечу!
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-row">
+            <div class="footer-colum-name">
+              <h2 class="footer-name-company">
+                Daniel Design, Inc.
+                <span>© 2015. All rights reserved. </span>
+              </h2>
+            </div>
+            <div class="footer-colum-addres">
+              <h3 class="footer-mail-phone">
+                daniel.developer.us@gmail.com <span>+79081407793</span>
+              </h3>
+            </div>
+            <div class="footer-colum-social">
+              <a href="" class="footer-social-link">Facebook</a>
+              <a href="" class="footer-social-link">Twitter</a>
+              <a href="" class="footer-social-link">Instagram</a>
+              <a href="" class="footer-social-link">VK</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-							<div class="header-logo">
-							<a href="" class="logo">Daniel
-								<span>develop</span>
-							</a>
-								
-							</div>
-
-							<div class="header-menu">
-								<ul class="header-menu-list">
-				
-									<li class="header-menu__item"><a href="index.html">Главная</a></li>
-									<li class="header-menu__item"><a href="About.html">Обо мне</a></li>
-									<li class="header-menu__item"><a href="contact.html">Контакты</a></li>
-									
-								</ul>
-									<div class="header-menu-link">
-										<button id="myBtnNav" class="header-menu__link">
-											<i class="fas phone fa-mobile-alt"></i>
-											обратный звонок
-										</button> 
-									</div>
-							</div>
-
-						</div>	
-					</div>
-				</nav>
-
-				<div class="contact-header-desc">
-					<h1 class="header__title">Web дизайн & Web разработка</h1>
-					<i class="fal fa-horizontal-rule line-header"></i>
-					<div class="div contact-information">
-						<ul class="horizont-list">
-							<li>
-								<i class="fas fa-map-marker-alt"></i>
-								г. Санкт-Петербург, Петергофское шоссе , дом 45
-							</li>
-							<li>
-								<i class="fas fa-phone-alt"></i>
-								+7 (908) 140-77-93
-							</li>
-							<li>
-								<i class="far fa-envelope"></i>
-								daniel.develop.us@gmail.com
-							</li>
-
-						</ul>
-					</div>
-					<button id="myBtnHeader" class=" header-desc_btn">Отравить заявку</button>
-				</div>
-			</header>
-			
-			<section class="information">
-				<div class="container">
-					<div class="information-row">
-						<h2 class="title"><span>Контактная</span> информация</h2>
-						<i class="fal fa-horizontal-rule prices__line"></i>
-						<p class="text">Работаю с Пн-Пт с 10:00 до 20:00 <br>
-						В нерабочее время обращайтесь на почту <span class="text-blue">daniel.develop.us@gmail.com</span> и я обязательно вам отвечу!</p>
-					</div>
-				</div>
-			</section>
-		</div>
-			<footer class="footer">
-				<div class="container">
-					<div class="footer-row">
-						<div class="footer-colum-name">
-							<h2 class="footer-name-company">Daniel Design, Inc.
-								<span>© 2015. All rights reserved.
-								</span>
-							</h2>
-						</div>
-						<div class="footer-colum-addres">
-							<h3 class="footer-mail-phone">daniel.developer.us@gmail.com
-							<span>+79081407793</span></h3>
-						</div>
-						<div class="footer-colum-social">
-							<a href="" class="footer-social-link">Facebook</a>
-							<a href="" class="footer-social-link">Twitter</a>
-							<a href="" class="footer-social-link">Instagram</a>
-							<a href="" class="footer-social-link">VK</a>
-						</div>
-					
-					</div>
-				</div>
-			</footer>
-
-	</div>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="lib/js/modal.js"></script>
-	<script src="lib/js/form.js"></script>
-	<script>
-		var startCount = 0;
-		var maxCount = 500;
-		var submitBtn = $("#submitBtn");
-		$("count").text(startCount);
-		function getCount(){
-			var count = startCount + $("#comment").val().length;
-			$("#count").text(count);
-			if (count >= maxCount){
-				$(".counter").addClass("red");
-			}else if (count < 500 && $(".counter").hasClass("red")){
-				$(".counter").removeClass("red");
-				submitBtn.prop('disable', false);
-			}
-			if (count >= 500){
-				submitBtn.prop('disable', true);
-			}
-		}
-	</script>
-</body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="lib/js/modal.js"></script>
+    <script src="lib/js/form.js"></script>
+    <script>
+      var startCount = 0;
+      var maxCount = 500;
+      var submitBtn = $("#submitBtn");
+      $("count").text(startCount);
+      function getCount() {
+        var count = startCount + $("#comment").val().length;
+        $("#count").text(count);
+        if (count >= maxCount) {
+          $(".counter").addClass("red");
+        } else if (count < 500 && $(".counter").hasClass("red")) {
+          $(".counter").removeClass("red");
+          submitBtn.prop("disable", false);
+        }
+        if (count >= 500) {
+          submitBtn.prop("disable", true);
+        }
+      }
+    </script>
+  </body>
 </html>

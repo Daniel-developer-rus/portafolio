@@ -1,198 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Обо мне</title>
-	<link rel="stylesheet" href="lib/css/main.css">
-	<script src="https://kit.fontawesome.com/ccb1b5141a.js" crossorigin="anonymous"></script>
-</head>
-<body>
-	<div class="wrapper">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="lib/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/ccb1b5141a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#" method="post" enctype="multipart/form-data">
+              <h2 class="formText">Оставьте заявку</h2>
+              <p class="formSecondText">И я свяжусь с вами!</p>
 
-		<div class="content">
+              <div class="formInput">
+                <span><i class="fas fa-user"></i></span>
+                <input
+                  type="text"
+                  name="username"
+                  value=""
+                  placeholder="Введите ваше имя"
+                />
+              </div>
+              <div class="formInput">
+                <span><i class="fas fa-phone-alt"></i></span>
+                <input
+                  type="telefon"
+                  name="userPhone"
+                  value=""
+                  placeholder="Введите ваш телефон"
+                />
+              </div>
+              <div class="formInput">
+                <span><i class="fas fa-envelope"></i></span>
+                <input
+                  type="email"
+                  name="useremail"
+                  value=""
+                  class="form__email"
+                  placeholder="Введите ваш email"
+                />
+              </div>
+              <div class="formComment">
+                <i class="fas fa-comment-dots"></i>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  class="inputText"
+                  autocomplete="off"
+                  oninput="getCount()"
+                  placeholder="Cообщение"
+                ></textarea>
+              </div>
 
-			<div id="myModal" class="modal">
-				<div class="modal-content">
-					<span class="close">&times;</span>
-					
-					<form action="#" method="post" enctype="multipart/form-data" >
-						<h2 class="formText">Оставьте заявку</h2>
-						<p class="formSecondText">И я свяжусь с вами!</p>
-					
-						<div class="formInput">
-							<span><i class="fas fa-user"></i></span>
-							<input type="text" name="username" value="" placeholder="Введите ваше имя">
-						</div>
-						<div class="formInput">
-							<span><i class="fas fa-phone-alt"></i></span>
-							<input type="telefon" name="userPhone" value="" placeholder="Введите ваш телефон">
-						</div>
-						<div class="formInput">
-							<span><i class="fas fa-envelope"></i></span>
-							<input type="email" name="useremail" value="" class="form__email" placeholder="Введите ваш email">
-						</div>	
-						<div class="formComment">
-							<i class="fas fa-comment-dots"></i>
-							<textarea name="comment" id="comment" class="inputText" autocomplete="off" oninput="getCount()" placeholder="Cообщение"></textarea>
-						</div>	
-						
-						<div class="under">
-							<p class="counter"><span id="count"></span>/500 знаков</p>
-							<input type="submit" id="submitBtn" value="Отправить" class="send">
-						</div>
-						
-					</form>
-				</div>
-			</div>
+              <div class="under">
+                <input
+                  type="submit"
+                  id="submitBtn"
+                  value="Отправить"
+                  class="send"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
 
-			<header class="header">
-				<nav class="navigation">
-					<div class="container">
-						<div class="header-nav-row">
+        <header class="header">
+          <nav class="navigation">
+            <div class="container">
+              <div class="header-nav-row">
+                <div class="header-logo">
+                  <a href="" class="logo"
+                    >Daniel
+                    <span>develop</span>
+                  </a>
+                </div>
 
-							<div class="header-logo">
-							<a href="" class="logo">Daniel
-								<span>develop</span>
-							</a>
-								
-							</div>
+                <div class="header-menu">
+                  <ul class="header-menu-list">
+                    <li class="header-menu__item">
+                      <a href="index.html">Главная</a>
+                    </li>
+                    <li class="header-menu__item">
+                      <a href="About.html">Обо мне</a>
+                    </li>
+                    <li class="header-menu__item">
+                      <a href="contact.html">Контакты</a>
+                    </li>
+                  </ul>
+                  <div class="header-menu-link">
+                    <button id="myBtnNav" class="header-menu__link">
+                      <i class="fas phone fa-mobile-alt"></i>
+                      обратный звонок
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
 
-							<div class="header-menu">
-								<ul class="header-menu-list">
-				
-									<li class="header-menu__item"><a href="index.html">Главная</a></li>
-									<li class="header-menu__item"><a href="About.html">Обо мне</a></li>
-									<li class="header-menu__item"><a href="contact.html">Контакты</a></li>
-									
-								</ul>
-									<div class="header-menu-link">
-										<button id="myBtnNav" class="header-menu__link">
-											<i class="fas phone fa-mobile-alt"></i>
-											обратный звонок
-										</button> 
-									</div>
-							</div>
+          <div class="header-obout-desc">
+            <div class="header-bg">
+              <img src="img/bg/header-bg.jpg" alt="" />
+            </div>
+            <div class="header-obout-desc-text">
+              <h1 class="header__title">Даниэль Альберто</h1>
+              <i class="fal fa-horizontal-rule line-header-obout"></i>
+              <p class="header__text">
+                живу в городе Санкт-Петербург, специализируюсь в разработке
+                <br />
+                интернет-магазинов, landing-page и корпоративных сайтов под ключ
+              </p>
+            </div>
+          </div>
+        </header>
 
-						</div>	
-					</div>
-				</nav>
+        <section class="resume">
+          <div class="container">
+            <div class="resume-row">
+              <div class="resume-item">
+                <div class="resume-item-img">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    class="item-img-img"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M20 6h-3V4c0-1.11-.89-2-2-2H9c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zM9 4h6v2H9V4zm11 15H4v-2h16v2zm0-5H4V8h3v2h2V8h6v2h2V8h3v6z"
+                    />
+                  </svg>
+                </div>
+                <div class="resume-item-desc">
+                  <span class="item-desc__total">548</span>
+                  <span class="item-desc__text">оконченных проектов</span>
+                </div>
+              </div>
+              <div class="resume-item">
+                <div class="item-img">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    class="item-img-img"
+                  >
+                    <path
+                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                    />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                  </svg>
+                </div>
+                <div class="resume-item-desc">
+                  <span class="item-desc__total">1465</span>
+                  <span class="item-desc__text">рабочих часов</span>
+                </div>
+              </div>
+              <div class="resume-item">
+                <div class="item-img">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    class="item-img-img"
+                  >
+                    <path
+                      d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                    />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                  </svg>
+                </div>
+                <div class="resume-item-desc">
+                  <span class="item-desc__total">612</span>
+                  <span class="item-desc__text">положительных отзывов</span>
+                </div>
+              </div>
+              <div class="resume-item">
+                <div class="item-img">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    class="item-img-img"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+                    />
+                  </svg>
+                </div>
+                <div class="resume-item-desc">
+                  <span class="item-desc__total">735</span>
+                  <span class="item-desc__text">довольных клиентов </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-				<div class="header-obout-desc">
-					<div class="header-bg">
-						<img src="img/bg/header-bg.jpg" alt="">
-					</div>
-					<div class="header-obout-desc-text">
-						<h1 class="header__title">Даниэль Альберто</h1>
-						<i class="fal fa-horizontal-rule line-header-obout"></i>
-						<p class="header__text"> живу в городе Санкт-Петербург, специализируюсь в разработке <br> интернет-магазинов, landing-page и корпоративных сайтов под ключ</p>
-					</div>
-				</div>
-			</header>
+        <section class="aboutMe">
+          <div class="aboutMe-row">
+            <div class="aboutMe-img">
+              <img src="img/bg/content-bg.jpg" alt="" />
+            </div>
+            <div class="aboutMe-desc">
+              <div class="aboutMe-title">Обо мне</div>
+              <div class="aboutMe-text">
+                В веб-разработке с 2015 года, бывший военный, начинал с создания
+                сайтов для друзей и знакомых а со временем это переросло в мою
+                профессиональную деятельность. <br /><br />
+                В настоящее время работаю фрилансером и выполняю работы для
+                нескольких фирм Европы и Латинской Америки.
+                <br />
+                <br />
+                Влядею несколькими языками - испанский, англиский, португалский
+                и русский.
+                <br /><br />
+                Всегда готов к проектам любой сложности и буду рад вам помочь.
+              </div>
+            </div>
+          </div>
+        </section>
 
-			<section class="resume">
-				<div class="container">
-					<div class="resume-row">
-						<div class="resume-item">
-							<div class="resume-item-img">
-								<svg  xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" class="item-img-img">
-									<path d="M0 0h24v24H0z" fill="none"/>
-									<path d="M20 6h-3V4c0-1.11-.89-2-2-2H9c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zM9 4h6v2H9V4zm11 15H4v-2h16v2zm0-5H4V8h3v2h2V8h6v2h2V8h3v6z"/>
-								</svg>
-							</div>
-							<div class="resume-item-desc">
-								<span class="item-desc__total">548</span>
-								<span class="item-desc__text">оконченных проектов</span>
-							</div>
-						</div>
-						<div class="resume-item">
-							<div class="item-img">
-								<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" class="item-img-img"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-							</div>
-							<div class="resume-item-desc">
-								<span class="item-desc__total">1465</span>
-								<span class="item-desc__text">рабочих часов</span>
-							</div>
-						</div>
-						<div class="resume-item">
-							<div class="item-img">
-								<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" class="item-img-img"><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-							</div>
-							<div class="resume-item-desc">
-								<span class="item-desc__total">612</span>
-								<span class="item-desc__text">положительных отзывов</span>
-							</div>
-						</div>
-						<div class="resume-item">
-							<div class="item-img">
-								<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" class="item-img-img"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>
-							</div>
-							<div class="resume-item-desc">
-								<span class="item-desc__total">735</span>
-								<span class="item-desc__text">довольных клиентов </span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+        <section class="contact">
+          <div class="container">
+            <div class="contact-row">
+              <div class="contact__title">Вам нужен проект?</div>
+              <div class="contact__text">
+                Дайте мне знать, что вы ищете и я посмотрю, может ли это стать
+                началом чего-то прекрасного.
+              </div>
+              <button id="myBtnHeader" class="contact__btn">
+                Отправить заявку
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
 
-			<section class="aboutMe">
-				<div class="aboutMe-row">
-					<div class="aboutMe-img">
-						<img src="img/bg/content-bg.jpg" alt="">
-					</div>
-					<div class="aboutMe-desc">
-						<div class="aboutMe-title">Обо мне</div>
-						<div class="aboutMe-text">
-							В веб-разработке с 2015 года, бывший военный, начинал с создания сайтов для друзей и знакомых а со временем это переросло в мою профессиональную деятельность. <br><br>
-							В настоящее время работаю фрилансером и выполняю работы для нескольких фирм Европы и Латинской Америки.
-							<br> <br>
-							Влядею несколькими языками - испанский, англиский, португалский и русский.
-							<br><br>
-							Всегда готов к проектам любой сложности и буду рад вам помочь.
- 
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="contact">
-				<div class="container">
-					<div class="contact-row">
-						<div class="contact__title">Вам нужен проект?</div>
-						<div class="contact__text">
-						Дайте мне знать, что вы ищете и я  посмотрю, может ли это стать началом чего-то прекрасного.</div>
-						<button id="myBtnHeader" class="contact__btn">Отправить заявку</button>
-					</div>
-				</div>
-			</section>
-		</div>
-
-		<footer class="footer">
-				<div class="container">
-					<div class="footer-row">
-						<div class="footer-colum-name">
-							<h2 class="footer-name-company">Daniel Design, Inc.
-								<span>© 2015. All rights reserved.
-								</span>
-							</h2>
-						</div>
-						<div class="footer-colum-addres">
-							<h3 class="footer-mail-phone">daniel.developer.us@gmail.com
-							<span>+79081407793</span></h3>
-						</div>
-						<div class="footer-colum-social">
-							<a href="" class="footer-social-link">Facebook</a>
-							<a href="" class="footer-social-link">Twitter</a>
-							<a href="" class="footer-social-link">Instagram</a>
-							<a href="" class="footer-social-link">VK</a>
-						</div>
-					
-					</div>
-				</div>
-		</footer>
-		
-	</div>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="lib/js/modal.js"></script>
-</body>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-row">
+            <div class="footer-colum-name">
+              <h2 class="footer-name-company">
+                Daniel Design, Inc.
+                <span>© 2015. All rights reserved. </span>
+              </h2>
+            </div>
+            <div class="footer-colum-addres">
+              <h3 class="footer-mail-phone">
+                daniel.developer.us@gmail.com <span>+79081407793</span>
+              </h3>
+            </div>
+            <div class="footer-colum-social">
+              <a href="" class="footer-social-link">Facebook</a>
+              <a href="" class="footer-social-link">Twitter</a>
+              <a href="" class="footer-social-link">Instagram</a>
+              <a href="" class="footer-social-link">VK</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="lib/js/modal.js"></script>
+  </body>
 </html>
