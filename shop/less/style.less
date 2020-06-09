@@ -1,0 +1,396 @@
+/* reset setings */
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 10px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.bigred{
+	font-size: 20px;
+	color: red;
+}
+
+
+/**************************************
+         color
+**************************************/
+
+
+@color:#3bc1b6;
+@light:#fff;
+@color-text:#afafaf;
+@btn-color:#3cc395;
+
+/**************************************
+     basic setings
+**************************************/
+
+
+.wrapper{
+	min-height:100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+/**************************************
+        typography
+**************************************/
+
+
+.regOpenSans(){
+	font-family: 'Open Sans', sans-serif;
+}
+.regBebas(){
+   font-family: 'BebasNeueRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+.reglobster(){
+	font-family: "Lobster 1.4";
+}
+
+.content{
+	flex: 1 1 auto;
+	padding: 3rem 0.5rem;
+}
+.container{
+	max-width: 99rem;
+	margin: 0 auto;
+
+}
+
+/**************************************
+     logo row
+**************************************/
+
+
+.aditii__row{
+	display: flex;
+	background-color: #ffffff;
+	justify-content:space-between;
+	margin-bottom: 2rem;
+}
+
+.aditii__corzina{
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+.aditii__text{
+	padding-left: 1.7rem;
+	color: #a1a1a1;
+	.regBebas();
+	font-size: 3.3rem;
+	line-height: 1.9rem;
+}
+
+/**************************************
+         menu
+**************************************/
+
+
+
+ .menu{
+ 	background:#4ccfc1;
+ 	padding:0.9rem 0 ;
+ }
+ .menu__row{
+ 	display: flex;
+ }
+ .menu__menu{
+ 	display: flex;
+
+ }
+ .menu__list{
+	
+	padding-left: 2rem;
+	&:first-child{
+		padding-left: 0;
+	}
+
+	&:after{
+		content:'';
+		display: inline-block;
+		border:1px solid @light;
+		margin-left: 2rem;
+		height:1.5rem;
+	}
+
+	&:last-child:after{
+		content:'';
+		border:none;
+	}
+}
+
+.menu__list a{
+	color:@light;
+	.regBebas();
+	font-size: 2.1rem;
+	line-height: 1.9rem;
+	text-transform: uppercase;
+	&:hover{
+		transition: all 1s;
+		text-decoration: underline;
+	}
+}
+.menu__list a.active{
+	text-decoration: underline @light;
+}
+
+/**************************************
+     header slick
+**************************************/
+
+
+.cowhide{
+	padding:7.6rem;
+	background: @color;
+
+}
+
+.cowhide__row{
+	display: flex;
+}
+.cowhide__img{}
+.cowhide__body{
+	margin-left: 10rem;
+}
+.cowhide__title{
+	color:@light;
+	.regBebas();
+	font-size: 61px;
+	line-height: 54px;
+	margin-bottom: 2.6rem;
+}
+.cowhide__text{
+	color: @light;
+	.regOpenSans();
+	font-size: 1.7rem;
+	line-height:2.8rem;
+	max-width: 420px;
+	margin-bottom: 3.2em;
+}
+.cowhide__btn{
+	background-color:@color;
+	height:4rem;
+	width: 13.3rem;
+	border-radius:7px;
+	color:@light;
+	.regBebas();
+	font-size: 2.7rem;
+	line-height: 1.9rem;
+	border: 3px solid @light;
+	&:hover{
+		background: darken(@color,5%);
+	}
+
+}
+/**************************************
+     brands block
+**************************************/
+
+.branded{
+	padding:3rem;
+	background-color:@light;
+}
+.items__row{
+	display: flex;
+	justify-content: center;
+
+}
+.branded__items{
+	display: flex;
+}
+.items__img{
+	margin-top: 2.5rem;
+	padding-right: 5rem;
+}
+.branded__image{}
+.items__body{
+
+}
+.branded__text{
+	color:@color-text;
+	.regBebas();
+	font-size: 2.7rem;
+	line-height: 2.5rem;
+	margin-top: 3.2rem;
+	margin-bottom: 2rem;
+}
+.btn {
+	background-color: @btn-color;
+	color: @light;
+	.regBebas();
+	font-size: 1.9rem;
+	line-height: 1.9rem;
+	padding:0.9rem 1.5rem;
+	border-radius:0.5rem;
+
+	&:hover{
+		background: darken(@btn-color, 5%);
+	}
+} 
+.branded__btn{}
+
+/**************************************
+     featurer block
+**************************************/
+
+.feature{
+	background-color: #39c2b5;
+	min-height:7rem;
+	padding-top: 2.4rem;
+	
+
+	.feature__text{
+		color: @light;
+		.regBebas();
+		font-size: 3.1rem;
+		line-height: 2.5rem;
+		text-transform: uppercase;
+		
+		}
+}
+
+/**************************************
+     featurer items
+**************************************/
+.feature__container{
+	max-width: 88rem;
+	margin: 0 auto;
+}
+.feature__items {
+	padding:4.8rem 5rem 3rem 5rem;
+	
+
+
+}
+.feature__items_row{
+	display: flex;
+	justify-content: space-between;
+}
+.items{
+	min-width: 25.3rem;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+	background-color: #ffffff;
+	text-align: center;
+	border-bottom:5px solid @btn-color;
+	padding-top: 2.4rem ;
+	padding-bottom: 4.5rem;
+	margin-bottom: 4.7rem;
+	
+}
+.item__img{
+	margin-bottom: 1.2rem;
+}
+.item__text{
+
+	color: @color-text;
+	.regBebas;
+	font-size: 2.7rem;
+	line-height: 2.5rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.item__price{
+	display: inline-block;
+	color:@color-text;
+	.regBebas();
+	font-size: 2.7rem;
+	line-height: 2.5rem;
+	margin-right: 1.5rem;
+	}
+.item__body_price{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+
+}
+.item__btn{
+
+}
+
+/**************************************
+       footer
+**************************************/
+
+.footer__content{
+	min-height: 33.6rem;
+	background: @color;
+	padding:4.2rem 0;
+}
+
+.footer__row{
+display: flex;
+}
+.footer__colum{
+	margin-right: 11.1rem;
+	&:last-child{
+		margin-right:0;
+	}
+}
+.footer__title{
+	color:@light;
+	.regBebas();
+	font-size: 2.7rem;
+	line-height: 2.5rem;
+	margin-bottom: 2.7rem;
+}
+
+.footer__text{
+	color:@light;
+	.regOpenSans();
+	font-size: 1.5rem;
+	line-height: 2.8rem;
+}
+
+.footer__podval{
+	background-color: #2da89b;
+	padding:1rem 1rem;
+}
+
+.footer__podval_row{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.footer__podval_text{
+	color:@light;
+	.regOpenSans();
+	font-size: 1.5rem;
+	line-height: 2.8rem;
+}

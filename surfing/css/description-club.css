@@ -1,0 +1,29 @@
+.club-description {
+  padding-top: 110px;
+}
+.club-description__wrapper {
+  position: relative;
+}
+.club-description-video {
+  position: absolute;
+  right: 0;
+  top: 43px;
+  z-index: 1;
+}
+.club-description-video .club-description-video__control {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 68px;
+  height: 68px;
+  box-shadow: -2px -2px 35px rgba(0, 0, 0, 0.13);
+  background-color: #5da8ef;
+  border-radius: 60px;
+}
+.club-description-video .club-description-video__control img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -50%);
+}

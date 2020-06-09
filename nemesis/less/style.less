@@ -1,0 +1,444 @@
+/***************************************
+              Обнуление
+***************************************/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 10px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+/***************************************
+				typograpy
+***************************************/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+.regReleway(){
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+.boldReleway(){
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,900i&display=swap');
+.regDisplay(){
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;	
+}
+.boldDisplay(){
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;	
+}
+.italicDisplay(){
+	font-family: 'Playfair Display', serif;
+	font-style:italic;
+	font-weight: 400;
+}
+
+.boldItalicDisplay(){
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-weight: 700;
+}
+.blackItalicDisplay(){
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-weight: 900;
+}
+/***************************************
+				color
+***************************************/
+@bgColor:#5d257c;
+@titleColor:#000;
+@textColor:#d9d9d9;
+@light:#fff;
+@btnbg:#ededed;
+
+/***************************************
+				basic
+***************************************/
+.wrapper{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow:hidden;
+}
+
+.content{
+	flex:1 1 auto;
+
+}
+
+.container{
+	width:1340px;
+	margin: 0 auto;
+}
+
+/***************************************
+				header
+***************************************/
+
+.header{
+	background:@light;
+	min-height: 22.8rem;
+	padding-top: 9rem;
+}
+.header__row{
+	display: flex;	
+	justify-content: space-between;
+	align-items: center;
+	padding:0 2rem;
+}
+
+/***************************************
+				section look
+***************************************/
+
+.look{
+	background: #f0f0f0
+}
+
+.look__row{
+	display: flex;	
+	align-items:center;
+	position: relative;
+	height: 89rem;
+
+	&:after{
+		content:'';
+		display: block;
+		position: absolute;
+		background: @bgColor;
+		top:0;
+		bottom:0;
+		height:100%;
+		width: 100%;
+		left: 100%;
+
+	}
+}
+.look__image{
+	background: url(../img/bgheader.png) center center no-repeat;
+	background-size: cover;
+	width: 60%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	right: 0;
+
+	
+}
+.look__content{
+	background: #5d257c;
+	padding:5.6rem 6.1rem;
+	width:50%;
+	max-height: 45.1rem;
+	position:relative;
+	z-index: 2;
+}
+.look__content_title{
+	.boldReleway();
+	font-size: 1.8rem;
+	padding-bottom:3.2rem;
+	border-bottom:1px solid #7d5196;
+	margin-bottom: 5rem;
+	color:@light;
+}
+
+.look__content_subtitle{
+	.boldReleway();
+	font-size: 4.8rem;
+	margin-bottom: 7rem;
+	line-height: 1.25;
+	text-align: left;
+	color:@light;
+}
+  
+.btn{
+  padding: 1.7rem 3.8rem ;
+  font-size: 1.6rem;
+  .boldReleway();
+  transition: all 0.5s ease-in-out;
+  &:hover{
+  	background: @bgColor;
+  	color:@light;
+  }
+
+}
+.look__btn{
+ background: @bgColor;
+ color:@light;
+ border:3px solid #7d5196;
+ transition:all 0.5s ease-in-out ;
+
+ &:hover{
+ 	background: @light;
+ 	color:@bgColor;
+ 	font-size: 1.6rem;
+ 	.boldReleway();
+ }
+}
+
+/***************************************
+				section brands
+***************************************/
+
+.brands{
+	background:@bgColor;
+}
+
+.brands__row{
+	display: flex;
+	min-height: 56.5rem;
+}
+
+.brands__item{
+	display: flex;
+	width: 50%;
+}
+
+.brands__body{
+	background: @light;
+	padding:5rem 3.1rem 0rem 3.1rem;
+}
+
+.body__head{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3.9rem;
+}
+.body__head_text{
+	font-size: 1.8rem;
+	color:@bgColor;
+	.boldItalicDisplay();
+}
+.body__head_date{
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.2);
+  .boldItalicDisplay();
+ 
+}
+.body__title{
+  font-size: 3rem;
+  .boldReleway();
+  color: rgb(0, 0, 0);
+  line-height: 1.333;
+  
+}
+.body__title_line{
+	display: block;
+	border-bottom:4px solid #000;
+	margin: 5rem 0;
+	width: 10.5rem;
+}
+
+.body__text {
+  font-size: 1.6rem;
+  .regDisplay();
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 2.25;
+  margin-bottom: 4rem;
+}
+
+.body__btn {
+  background: @light;
+  border:3px solid @btnbg;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
+/***************************************
+				section store
+***************************************/
+
+.store__row{
+	display: flex;
+	position:relative;
+	min-height:90.6rem;
+}
+.store__prepare{
+	text-align: center;
+	width: 63.7rem;
+	height: 60.2rem;
+	background: url(../img/5.jpg) center center no-repeat;
+	background-size: cover;
+	padding-top: 26.7rem;
+}
+.title{
+	.italicDisplay();
+	font-size: 2.6rem;
+	color:#bcbcbc;
+	margin-bottom: 1.6rem;
+}
+.store__prepare_prepare{
+}
+.subtitle{
+	.boldReleway();
+	font-size: 4.8rem;
+	text-transform: uppercase;
+}
+.store__prepare_black{
+	margin-bottom: 13.1rem;
+}
+
+.store__btn{
+
+}
+
+.store__house{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 74rem;	
+	height: 30.3rem;
+	background: @bgColor;
+}
+.store__house_card{
+	padding:5rem 15.4rem;
+	border: 3px solid #873ab1;	
+}
+.house__card_the{
+	text-align:center;
+	color:@light;
+}
+.house__card_store{
+	.boldReleway();
+	font-size: 4.8rem;
+	color:@light;
+	margin-bottom: 2.4rem;
+}
+.house__card_text{
+	.boldDisplay();
+	text-align: center;
+	font-size: 1.4rem;
+	color:#7d35a5;
+}
+
+.store__join{
+	width: 65rem;
+	height: 30.1rem;
+	background:url(../img/6.jpg)center center no-repeat;
+	background-size: cover;
+	padding:11.8rem;
+	text-align: center;
+}
+
+.store__reader{
+	position:absolute;
+	bottom:0;
+	left: 0;
+	padding: 7.4rem 0 ;
+	text-align: center;
+	margin-left: 10.2rem;
+	
+	.store__reader_title{
+		.boldItalicDisplay();
+		font-size: 10.3rem;
+		color:@bgColor;
+		margin-bottom: 4.8rem;
+	}
+}
+
+.store__img_gerl{
+	position:absolute;
+	top: 34%;
+	bottom:0;
+	left: 42%;
+}
+
+.store__nike{
+	position: absolute;
+	top:33.4%;
+	bottom:0;
+	left:68%;
+	background: url(../img/8.jpg) center center no-repeat;
+	background-size: cover;
+	min-height:60.2rem;
+	min-width: 65.2rem;
+
+}
+.store__nike_purpure{
+	width: 100%;
+	height: 100%;
+	background: rgba(93, 37, 124, 0.9);
+	padding-top: 37.4rem;
+	padding-left: 4.8rem;
+}
+.store__nike_title{
+		.boldReleway();
+		font-size: 4.8rem;
+		color:@light;
+		margin-bottom: 3.4rem;
+		line-height: 1.25;
+	}
+	.store__nike_btn{
+		display: inline-block;
+		background: @bgColor;
+		color:@light;
+		border:3px solid #7d5196;
+		transition:all 0.5s ease-in-out ;
+
+		&:hover{
+			background: @light;
+			color:@bgColor;
+			font-size: 1.6rem;
+			.boldReleway();
+		}
+	}
+
+/***************************************
+				section showmore
+***************************************/
+.showmore__row{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	padding:10.3rem 0;
+	}
+
+.showmore__btn{
+	padding: 10rem 12.7rem ;
+	background-color: #f0f0f0;
+	.boldReleway();
+	font-size: 3.6rem;
+	transition: all 0.5s ease-in-out;
+	& span{
+		text-decoration: underline;
+	}
+	&:hover{
+		background: darken(#f0f0f0,10%);
+	}
+}

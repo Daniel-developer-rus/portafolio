@@ -1,0 +1,120 @@
+/**************************************
+        header social
+**************************************/
+.navigation{
+	padding: 1.5rem 2rem;
+	position: fixed;
+	width: 100%;
+	z-index: 11;	
+	top:0;
+	left: 0;
+	right: 0; 
+	background-color: #fff;
+}
+.header-nav-row{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: @light;
+}
+
+.header-logo{
+	cursor:pointer;
+	width: 50%;
+}
+
+.logo{
+	.regRobo();
+	font-size: 3rem;
+	text-decoration: none;
+	color:#000;
+	text-align: left;
+	position: relative;
+	width: 100%;
+	display: block;
+
+	&:after{
+		content:'';
+		position: absolute;
+		width: 9rem;
+		height: 1.5rem;
+		background-color: #6fc5c5;
+		opacity: 70%;
+		top:26%;
+		left:-4px;
+		transform:translate(0, -50%);
+		
+	}
+
+	span{
+		display: block;
+		font-family: 'Qanelas';
+		font-weight: 700;
+		font-size: 3rem;
+	}
+
+}
+
+
+/**************************************
+        header nav
+**************************************/
+.header-menu{
+	display: flex;
+	width: 50%;
+	justify-content: space-between;
+	align-items:center;
+}
+.header-menu-list{
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	width: 40rem;
+	a{
+		text-decoration: none;
+		color: #1d1d21;
+		.regRobo();
+		font-size: 1.8rem;
+		letter-spacing: 0.6px;
+		padding:1rem 2rem;
+		transition:all 0.3s ease-in-out;
+
+		&:hover {
+			background-color: #6fc5c5;
+			border-radius:5rem;
+		}
+	}
+}
+
+.header-menu__item{
+	transition:all 0.3s ease-in-out;
+	
+}
+
+.header-menu-link{
+	display: flex;
+}
+.header-menu__link{
+	display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+   .regRobo();
+    color: #fff;
+    background: #4bc2e0;
+    border: 2px solid #4bc2e0;
+    padding: 1rem 2rem;
+    letter-spacing: 1px;
+    box-shadow: 1px 3px 7px -4px rgba(0,0,0,0.7);
+    border-radius:50px;
+    transition:all 0.3s ease-in-out;
+
+	&:hover{
+		background-color: darken(#4bc2e0, 10%);
+	}
+}
+
+.phone{
+	width: 1rem;
+	height: 1rem;
+	color: @light;
+}

@@ -1,0 +1,266 @@
+
+.header-desc{
+	display: flex;
+	min-height: 53rem;
+	flex-direction:column;
+	padding:6rem 0 10rem;
+	text-align: center;
+	background: url(../../img/bg/bg-index4.png) center center no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-top: 10rem;
+
+	&:before{
+		content:'';
+		top:0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0,0,0,0.7);
+		position: absolute;
+	}
+}
+.header__title{
+	color: #fff;
+	.boldRobo();
+	font-size:4.4rem;
+	line-height: 5rem;
+	margin-bottom: 4rem;
+	text-transform: uppercase;
+	z-index: 9;
+}
+
+.line-header{
+	display: inline-block;
+	width: 140px;
+    height: 1px;
+    margin: 40px auto;
+    padding: 0;
+    background: #ffffff;
+    z-index: 9;
+    margin-bottom: 6.5rem;
+}
+.header__text{
+	.ligthRobo();
+	text-align: center;
+	font-size: 2.1rem;
+	line-height: 3rem;
+	margin-bottom: 6rem;
+	color:@light;
+	z-index: 9;
+
+}
+
+.header-desc_btn{
+	display: inline-block;
+	padding:1.5rem 4rem;
+	background-color: #4bc2e0;
+	border-radius:3rem;
+	cursor:pointer;
+	color:@light;
+	box-shadow:1px 3px 7px -4px rgba(0,0,0,0.7);
+	z-index: 9;
+	margin: 0 auto;
+	.regRobo();
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	transition:all 0.3s ease-in-out;
+
+	&:hover{
+		background-color: darken(#4bc2e0, 10%);
+	}
+
+	
+}
+
+/**************************************
+        section prices 
+**************************************/
+.prices{
+	padding:6rem 0;
+	text-align: center;
+	background-color: #eceff1;
+}
+.prices__line{
+	width: 140px;
+	height: 1px;
+	margin: 4rem auto;
+	padding: 0;
+	background: #000;
+	z-index: 9;
+	text-align: center;
+}
+.text{
+	.lightRoboCondensed();
+    font-size:2.3rem;
+    margin-bottom: 6rem;
+    line-height: 4rem;
+    padding:0 2rem;
+}
+.prices-row-1{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 3rem;
+}
+.prices-row-2{
+	display: flex;
+	justify-content: space-around;
+}
+.prices-item{
+	width: 58rem;
+	height: 20rem;
+	position: relative;
+	text-align: left;
+
+	&:before{
+		top:0;
+		left: 0;
+		content:'';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: #000a14;
+		opacity: 0.6;
+	}
+}
+
+.item-bg-1{
+	background: url(../../img/prices/1.jpg) center center no-repeat;
+	background-size: cover;
+}
+.item-bg-2{
+	background: url(../../img/prices/2.jpg) center center no-repeat;
+	background-size: cover;
+}
+.item-bg-3{
+	background: url(../../img/prices/3.jpg) center center no-repeat;
+	background-size: cover;
+}
+.item-bg-4{
+	background: url(../../img/prices/4.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.item-title{
+	color: @light;
+    .ligthRobo();
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 3.6rem;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 10%;
+    width: 80%;
+
+    span{
+    	.boldRobo();
+    }
+}
+
+.item-desc{
+	color: @light;
+   	.regRobo();
+    font-size: 2rem;
+    line-height: 26px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    right: 10%;
+    width: 80%;
+}
+/**************************************
+        section may works
+**************************************/
+
+.mayWorks{
+padding:6rem 0rem;
+text-align: center;
+background-color: #eceff1;
+}
+
+.title{
+	font-size: 3rem;
+	.ligthRobo();
+	text-transform: uppercase;
+	text-align: center;
+	span{
+		.boldRobo();
+	}
+}
+
+.line-myWorks{
+	width: 140px;
+	height: 1px;
+	margin: 40px auto;
+	padding: 0;
+	background: #000;
+	z-index: 9;
+	text-align: center;
+}
+.mayWorks-row-1{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 1rem;
+}
+.mayWorks-row-2{
+	display: flex;
+	justify-content: space-around;
+}
+
+.myWorks-item{
+	width: 58rem;
+	height: 34rem;
+	position: relative;
+	text-align: left;
+}
+.myWorks-item-bg-1{
+	background: url(../../img/works-images/internet-shop.psd.png) no-repeat;
+	background-size: cover;
+}
+
+.myWorks-item-bg-2{
+	background: url(../../img/works-images/Landing-page.png) no-repeat;
+	background-size: cover;
+}
+.myWorks-item-bg-3{
+	background: url(../../img/works-images/surfing.png) no-repeat;
+	background-size: cover;
+}
+.myWorks-item-bg-4{
+	background: url(../../img/works-images/nemesis.png) no-repeat;
+	background-size: cover;
+}
+
+.item-hover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+
+	&:hover{
+		opacity:1;
+	}
+}
+
+.works-btn{
+	display: block;
+	position: absolute;
+	bottom: 16px;
+	right: 25px;
+    padding:1rem 2rem;
+    margin: 0 auto;
+    line-height:1;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius:50px;
+	transition: all 0.3s ease-in-out;
+    &:hover{
+    	background-color:@light;
+    	color:#000;
+    }
+}

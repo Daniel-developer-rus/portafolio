@@ -1,0 +1,258 @@
+/*******************************
+           shop title
+*******************************/
+.shop{
+	padding-top: 95px/2;
+	padding-bottom:85px/2;
+	position: relative;
+	
+	@media (min-width: 1254px) {
+		padding-top: 95px;
+		padding-bottom: 85px;
+	}
+
+	&:before{
+		content:'';
+		position: absolute;
+		top:-330px;
+		bottom:0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 984px;
+		z-index: -1;
+		background: url(../img/line-bg/line-bg.png),url(../img/bg/bg-water.jpg);
+		background-size:auto,cover;
+		background-repeat: repeat-y,no-repeat;
+		background-position: center,center;
+
+	}
+}
+.shop-title{
+	text-align: center;
+	margin-bottom: 50px;
+	position: absolute;
+	left: 50%;
+	top:50px;
+	transform:translate(-50%);
+}
+.title{
+	color:#333;
+	.boldPlay();
+	font-size: 42px;
+	line-height: 1.2px;
+	letter-spacing: 0.42px;
+}
+.shop-title_title{
+	
+}
+.shop-title-subtitle{
+	display: block;
+	color:#5da8ef;
+	.boldSpartan();
+	font-size: 9px;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing:5.4px;
+	margin-bottom: 20px;
+
+/*******************************
+           slaider 
+*******************************/
+}
+.shop-slide-wrapper{
+	height: 565px;
+	position: relative;
+	margin-bottom: 80px;
+}
+ .shop-slider-special-holder{
+ 	position: absolute;
+ 	left: 0;
+ 	right:0;
+
+ 	@media (min-width: 1394px){
+ 		right: -85px;
+ 	}
+ }
+
+.shop-slider{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+
+}
+.shop-slide-item{
+	position: relative;
+	margin-top: 130px;
+	width: 250px;
+	height: 435px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	@media (min-width: 650px){
+		padding-left: 185px;
+		width: 435px+185px;
+	}
+
+	@media(min-width: 1254px){
+		margin-left: 0;
+		padding-left: 0;
+	}
+}
+.shop-slide-item-board{
+	position: absolute;
+	background-color: #e2e2e3;
+	width: 250px;
+	height: 320px;
+	bottom:0;
+	left: 0;
+
+	@media (min-width:650px) {
+		left:185px;
+	}
+
+	@media (min-width: 1254px) {
+		left:0;
+	}
+.shop-slide-item-board__img{
+	position: absolute;
+	bottom:10px;
+	left: 50%;
+	transform: translate(-50%);
+	}
+
+}
+
+.shop-slider-item-desc{
+	width: 210px;
+	position: absolute;
+	top: 196px;
+	right:0;
+	z-index: 9;
+	text-align: right;
+
+	@media (min-width: 650px) {
+		right:auto;
+		left: 216px + 185px;
+		text-align: left;
+	}
+
+	@media (min-width: 1254px) {
+		left:216px;
+	}
+}
+.board__cat{
+	color:#7a7a7a;
+	.lightPop();
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing:2.4px;
+}
+.board__title{
+	color:#333;
+	.regPlay();
+	font-size: 26px;
+	line-height: 28px;
+	letter-spacing:0.26px;
+}
+.board-by{
+	margin-top: 38px;
+	margin-left: 55px;
+}
+.board_buy_price{
+	color:#ce60a8;
+	.lightPop();
+	font-size: 20px;
+	letter-spacing: -0.1px;
+}
+.board_buy_link a{
+	color:#333;
+	.boldSpartan();
+	font-size: 9px;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing:5.4px;
+	margin-left: 2px;
+}
+
+/*******************************
+           slider controls
+*******************************/
+.shopSlider-controls{
+	position: relative;
+
+	img{
+		vertical-align: top;
+	}
+}
+.shopSliderLeft{
+	width: 40px;
+	height: 48px;
+	padding: 15px;
+	position: absolute;
+	left: -15px;
+	bottom:120px;
+	z-index: 9;
+	cursor: pointer;
+
+	@media (min-width: 650px){
+		bottom:120px + 80px;
+		left:0px;
+		transform:translate(100%, 0%);
+	}
+	@media (min-width: 1334px){
+		left:0px;
+		transform:translate(-100%, 100%);
+			}
+	
+}
+
+.shopSliderRight{
+	width: 40px;
+	height: 48px;
+	padding: 15px;
+	position: absolute;
+	right: -15px;
+	bottom:120px;
+	z-index: 9;
+	cursor: pointer;
+
+	@media (min-width: 650px){
+		bottom:calc(120px + 80px);
+		right:0px;
+		transform:translate(-100%, 0%);
+	}
+	@media (min-width: 1334px){
+		right:0px;
+		transform:translate(100%, 100%);
+			}
+}
+/*******************************
+           shop link
+*******************************/
+.shop__link{
+	text-align: center;
+	
+}
+.show__all_link{
+	position: relative;
+	color:#333;
+	.boldSpartan();
+	font-size: 9px;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 5.4px;
+	padding-bottom: 10px;
+	display: inline-block;
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom:0px;
+		height: 2px;
+		background-color: #5da8ef;
+		opacity: 0.7;
+
+	}
+}

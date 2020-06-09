@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="lib/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/ccb1b5141a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#" method="post" enctype="multipart/form-data">
+              <h2 class="formText">Оставьте заявку</h2>
+              <p class="formSecondText">И я свяжусь с вами!</p>
+
+              <div class="formInput">
+                <span><i class="fas fa-user"></i></span>
+                <input
+                  type="text"
+                  name="username"
+                  value=""
+                  placeholder="Введите ваше имя"
+                />
+              </div>
+              <div class="formInput">
+                <span><i class="fas fa-phone-alt"></i></span>
+                <input
+                  type="telefon"
+                  name="userPhone"
+                  value=""
+                  placeholder="Введите ваш телефон"
+                />
+              </div>
+              <div class="formInput">
+                <span><i class="fas fa-envelope"></i></span>
+                <input
+                  type="email"
+                  name="useremail"
+                  value=""
+                  class="form__email"
+                  placeholder="Введите ваш email"
+                />
+              </div>
+              <div class="formComment">
+                <i class="fas fa-comment-dots"></i>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  class="inputText"
+                  autocomplete="off"
+                  oninput="getCount()"
+                  placeholder="Cообщение"
+                ></textarea>
+              </div>
+
+              <div class="under">
+                <input
+                  type="submit"
+                  id="submitBtn"
+                  value="Отправить"
+                  class="send"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <header class="header">
+          <nav class="navigation">
+            <div class="container">
+              <div class="header-nav-row">
+                <div class="header-logo">
+                  <a href="" class="logo"
+                    >Daniel
+                    <span>develop</span>
+                  </a>
+                </div>
+              
+                <div class="nav-wrapper">
+                    <!--nav desktop -->
+                  <div class="header-menu">
+                    <ul class="header-menu-list">
+                      <li class="header-menu__item">
+                        <a href="index.html">Главная</a>
+                      </li>
+                      <li class="header-menu__item">
+                        <a href="About.html">Обо мне</a>
+                      </li>
+                      <li class="header-menu__item">
+                        <a href="contact.html">Контакты</a>
+                      </li>
+                    </ul>
+                    <div class="header-menu-link">
+                      <button id="myBtnNav" class="header-menu__link">
+                        <i class="fas phone fa-mobile-alt"></i>
+                        обратный звонок
+                      </button>
+                    </div>
+                  </div>
+                    <!--buttom navigation -->
+                    <div class="menu-icon-wrapper">
+                      <div class="menu-icon"></div>
+                    </div>
+                    <!--nav mobile-->
+                    <div class="mobile-nav" id="mobile-nav">
+                      <div class="mobile-nav__title">
+                        Навигация
+                      </div>
+
+                      <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item">
+                          <a href="index.html"  class="mobile-nav__link">Главная</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                          <a href="About.html" class="mobile-nav__link">Обо мне</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                          <a href="contact.html" class="mobile-nav__link">Контакты</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="header-desc">
+            <h1 class="header__title">Web дизайн & Web разработка</h1>
+            <i class="fal fa-horizontal-rule line-header"></i>
+            <p class="header__text">
+              Меня зовут Даниэль, живу в городе Санкт-Петербург, специализируюсь
+              в разработке <br />
+              интернет-магазинов, landing-page и корпоративных сайтов под ключ
+            </p>
+            <botton id="myBtnHeader" class="header-desc_btn"
+              >Отравить заявку</botton
+            >
+          </div>
+        </header>
+
+        <section class="prices">
+          <div class="container">
+            <h2 class="title"><span>Делаю</span> сайты</h2>
+            <i class="fal fa-horizontal-rule prices__line"></i>
+            <p class="text">
+              Разрабатываю качественные сайты с уникальным дизайном по
+              привлекательной цене! Решаю полный спектр задач: доработка,
+              развитие, seo-оптимизация, мобильная адаптация, техническая
+              поддержка, повышение продаж и UX.
+            </p>
+
+            <div class="prices-block">
+              <ul class="prices__list">
+                <li>
+                  <a>
+                    <img src="./img/prices/1.jpg" alt="">
+                    <div class="hoverimg"></div>
+                    <h3>
+                      <b>Разработка</b> <br> кораративных сайтов
+                    </h3>
+                  </a>
+                  <p>От 10000 руб.</p>
+                </li>
+                <li>
+                  <a>
+                    <img src="./img/prices/2.jpg" alt="">
+                    <div class="hoverimg"></div>
+                    <h3>
+                      <b>Разработка</b> <br> Landing page
+                    </h3>
+                  </a>
+                  <p>От 10000 руб.</p>
+                </li>
+                <li>
+                  <a>
+                    <img src="./img/prices/3.jpg" alt="">
+                    <div class="hoverimg"></div>
+                    <h3>
+                      <b>Разработка</b> <br> интернет магазинов
+                    </h3>
+                  </a>
+                  <p>От 10000 руб.</p>
+                </li>
+                <li>
+                  <a>
+                    <img src="./img/prices/4.jpg" alt="">
+                    <div class="hoverimg"></div>
+                    <h3>
+                      <b>Продвижение</b> <br> сайтов
+                    </h3>
+                  </a>
+                  <p>От 5000 руб.</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="mayWorks">
+          <div class="container">
+            <h2 class="title"><span>Реализованные</span> проекты</h2>
+            <i class="fal fa-horizontal-rule line-myWorks"></i>
+            <p class="text">
+              Успешно создаю и продвигаю сайты для бизнеса. Мои проекты занимают
+              места в ТОП-10 Яндекс и Google. Я использую передовые методы
+              рекламы, SEO-продвижение, повышаю ROMI ремаркетингом и
+              ретаргетингом.
+            </p>
+
+              <ul class="work__list">
+                <li>
+
+                  <img src="./img/works-images/internet-shop.psd" alt="Internet shop">
+                  <a href="./shop/index.html" target="_blank"  class="hover">
+                    <h3>
+                      <b>Additi</b> <br> Интернет магазин
+                    </h3>
+                    <p>От 10000 руб.</p>
+                    <button class="work__link">Подробнее</button>
+                   
+                  </a>
+                 
+                </li>
+                <li>
+
+                  <img src="./img/works-images/austera.jpg" alt="">
+                  <a href="./austera/index.html" target="_blank"  class="hover">
+                    <h3>
+                      <b>Austera</b> <br> Landing Page
+                    </h3>
+                    <p>От 10000 руб.</p>
+                    <button class="work__link">Подробнее</button>
+                   
+                  </a>
+                 
+                </li>
+                <li>
+
+                  <img src="./img/works-images/surfing.jpg" alt="">
+                  <a href="./surfing/index.html" target="_blank"  class="hover">
+                    <h3>
+                      <b>Surfing</b> <br> кораративный сайт
+                    </h3>
+                    <p>От 10000 руб.</p>
+                    <button class="work__link">Подробнее</button>
+                   
+                  </a>
+                 
+                </li>
+                <li>
+
+                  <img src="./img/works-images/notes.jpg" alt="">
+                  <a href="https://notes-nodejs.herokuapp.com" target="_blank"  class="hover">
+                    <h3>
+                      <b>Notes</b> <br> Приложение заметок
+                    </h3>
+                    <p>От 10000 руб.</p>
+                    <button class="work__link">Подробнее</button>
+                   
+                  </a>
+                 
+                </li>
+              </ul>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-row">
+            <div class="footer-colum-name">
+              <h2 class="footer-name-company">
+                Daniel Design, Inc.
+                <span>© 2015. All rights reserved. </span>
+              </h2>
+            </div>
+            <div class="footer-colum-addres">
+              <h3 class="footer-mail-phone">
+                daniel.developer.us@gmail.com <span>+79081407793</span>
+              </h3>
+            </div>
+            <div class="footer-colum-social">
+              <a href="" class="footer-social-link">Facebook</a>
+              <a href="" class="footer-social-link">Twitter</a>
+              <a href="" class="footer-social-link">Instagram</a>
+              <a href="" class="footer-social-link">VK</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="lib/js/modal.js"></script>
+    <script src="lib/js/button.js"></script>
+    
+  </body>
+</html>
