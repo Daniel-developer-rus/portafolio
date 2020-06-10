@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Обо мне</title>
     <link rel="stylesheet" href="lib/css/main.css" />
     <script
@@ -71,6 +72,7 @@
           </div>
         </div>
 
+        \
         <header class="header">
           <nav class="navigation">
             <div class="container">
@@ -82,45 +84,73 @@
                   </a>
                 </div>
 
-                <div class="header-menu">
-                  <ul class="header-menu-list">
-                    <li class="header-menu__item">
-                      <a href="index.html">Главная</a>
-                    </li>
-                    <li class="header-menu__item">
-                      <a href="About.html">Обо мне</a>
-                    </li>
-                    <li class="header-menu__item">
-                      <a href="contact.html">Контакты</a>
-                    </li>
-                  </ul>
-                  <div class="header-menu-link">
-                    <button id="myBtnNav" class="header-menu__link">
-                      <i class="fas phone fa-mobile-alt"></i>
-                      обратный звонок
-                    </button>
+                <div class="nav-wrapper">
+                  <!--nav desktop -->
+                  <div class="header-menu">
+                    <ul class="header-menu-list">
+                      <li class="header-menu__item">
+                        <a href="index.html">Главная</a>
+                      </li>
+                      <li class="header-menu__item">
+                        <a href="About.html">Обо мне</a>
+                      </li>
+                      <li class="header-menu__item">
+                        <a href="contact.html">Контакты</a>
+                      </li>
+                    </ul>
+                    <div class="header-menu-link">
+                      <button id="myBtnNav" class="header-menu__link">
+                        <i class="fas phone fa-mobile-alt"></i>
+                        обратный звонок
+                      </button>
+                    </div>
+                  </div>
+                  <!--buttom navigation -->
+                  <div class="menu-icon-wrapper">
+                    <div class="menu-icon"></div>
+                  </div>
+                  <!--nav mobile-->
+                  <div class="mobile-nav" id="mobile-nav">
+                    <div class="mobile-nav__title">
+                      Навигация
+                    </div>
+
+                    <ul class="mobile-nav__list">
+                      <li class="mobile-nav__item">
+                        <a href="index.html" class="mobile-nav__link"
+                          >Главная</a
+                        >
+                      </li>
+                      <li class="mobile-nav__item">
+                        <a href="About.html" class="mobile-nav__link"
+                          >Обо мне</a
+                        >
+                      </li>
+                      <li class="mobile-nav__item">
+                        <a href="contact.html" class="mobile-nav__link"
+                          >Контакты</a
+                        >
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </nav>
 
-          <div class="header-obout-desc">
-            <div class="header-bg">
-              <img src="img/bg/header-bg.jpg" alt="" />
-            </div>
-            <div class="header-obout-desc-text">
-              <h1 class="header__title">Даниэль Альберто</h1>
-              <i class="fal fa-horizontal-rule line-header-obout"></i>
-              <p class="header__text">
-                живу в городе Санкт-Петербург, специализируюсь в разработке
-                <br />
-                интернет-магазинов, landing-page и корпоративных сайтов под ключ
-              </p>
-            </div>
+          <div class="header-desc">
+            <h1 class="header__title">Web дизайн & Web разработка</h1>
+            <i class="fal fa-horizontal-rule line-header"></i>
+            <p class="header__text">
+              Меня зовут Даниэль, живу в городе Санкт-Петербург, специализируюсь
+              в разработке <br />
+              интернет-магазинов, landing-page и корпоративных сайтов под ключ
+            </p>
+            <botton id="myBtnHeader" class="header-desc_btn"
+              >Отравить заявку</botton
+            >
           </div>
         </header>
-
         <section class="resume">
           <div class="container">
             <div class="resume-row">
