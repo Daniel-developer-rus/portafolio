@@ -539,7 +539,17 @@ img {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
+.prices__list li:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
 .prices__list li a {
   display: block;
 }
@@ -609,6 +619,18 @@ img {
     padding:3rem 0;
   }
 }
+.card {
+  border-radius: 18px;
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
 .line-myWorks {
   width: 140px;
   height: 1px;
@@ -635,6 +657,16 @@ img {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  border-radius: 18px;
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.work__list li:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
  .hover{
    opacity: 0;
