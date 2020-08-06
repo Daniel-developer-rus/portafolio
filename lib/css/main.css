@@ -174,8 +174,7 @@ img {
   position: absolute;
   width: 9rem;
   height: 1.3rem;
-  background-color: #6fc5c5;
-  opacity: 70%;
+  background-color: rgba(111,197,197, .7);
   top: 26%;
   left: -4px;
   transform: translate(0, -50%);
@@ -183,7 +182,7 @@ img {
 @media (max-width: 480px){
   .logo:after {
     height: 1rem;
-    opacity: 40%;
+    background-color: rgba(111,197,197, .4);
   }
 }
 .logo span {
