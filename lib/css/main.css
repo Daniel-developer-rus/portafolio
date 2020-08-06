@@ -734,6 +734,7 @@ img {
 @media(max-width:640px){
   .work__list .hover p {
     font-size: 1.6rem;
+    line-height: 1;
   }
 }
 .work__link{
