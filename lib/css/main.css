@@ -173,12 +173,18 @@ img {
   content: '';
   position: absolute;
   width: 9rem;
-  height: 1.5rem;
+  height: 1.3rem;
   background-color: #6fc5c5;
   opacity: 70%;
   top: 26%;
   left: -4px;
   transform: translate(0, -50%);
+}
+@media (max-width: 480px){
+  .logo:after {
+    height: 1rem;
+    opacity: 40%;
+  }
 }
 .logo span {
   display: block;
